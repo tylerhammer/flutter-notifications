@@ -19,6 +19,7 @@ class _MainPageState extends State<MainPage> {
   @override
   void initState() {
     super.initState();
+    SendbirdChat.addUserEventHandler('UNIQUE_HANDLER_ID', MyUserEventHandler(this));
     SendbirdChat.getTotalUnreadMessageCountWithFeedChannel().then((data) => {
       if (data.totalCountForFeedChannels > 0) {
         setState(() {
@@ -70,5 +71,21 @@ class _MainPageState extends State<MainPage> {
         ],
       ),
     );
+  }
+}
+
+class MyUserEventHandler extends UserEventHandler {
+  final _MainPageState state;
+
+  MyUserEventHandler(this.state);
+
+  @override
+  void onFriendsDiscovered(List<User> friends) {}
+
+  @override 
+  void onTotalUnreadMessageCountChanged(UnreadMessageCount unreadMessageCount) {
+    state.setState(() {
+      state.staticTitle = 'Feed Channel (${unreadMessageCount.totalCountForFeedChannels})';
+    });
   }
 }
