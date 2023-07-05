@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "948853199245",
+    "project_id": "hammer-43aa8",
+    "storage_bucket": "hammer-43aa8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948853199245:android:96b46b457e5ebf30926dc4",
+        "android_client_info": {
+          "package_name": "com.sendbird.chat.sample.flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8-ovTyr6gSMX4NTw1wMtPlA3AM5lT4iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "948853199245-6c0gjmdrgmducmtsr9d91m9ps1bgd5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sendbird.sv2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948853199245:android:3501bf37058cc0a9926dc4",
+        "android_client_info": {
+          "package_name": "com.sendbird.chat.sample.groupchannel.push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8-ovTyr6gSMX4NTw1wMtPlA3AM5lT4iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "948853199245-6c0gjmdrgmducmtsr9d91m9ps1bgd5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sendbird.sv2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948853199245:android:00f96aad03492e78926dc4",
+        "android_client_info": {
+          "package_name": "com.sendbird.flutter.hammer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8-ovTyr6gSMX4NTw1wMtPlA3AM5lT4iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "948853199245-6c0gjmdrgmducmtsr9d91m9ps1bgd5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sendbird.sv2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948853199245:android:49c2091a033c320a926dc4",
+        "android_client_info": {
+          "package_name": "com.sendbird.uikit.reactnative.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8-ovTyr6gSMX4NTw1wMtPlA3AM5lT4iY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948853199245-hfvfp8110j494ji7l02rav0q3sb2r31i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "948853199245-6c0gjmdrgmducmtsr9d91m9ps1bgd5iu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sendbird.sv2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
