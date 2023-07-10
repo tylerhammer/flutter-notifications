@@ -25,7 +25,6 @@ class FeedChannelPageState extends State<FeedChannelPage> {
   String title = '';
   bool hasPrevious = false;
   bool hasNext = false;
-  FeedChannel? channel;
   List<BaseMessage> messageList = [];
 
   @override
@@ -40,13 +39,11 @@ class FeedChannelPageState extends State<FeedChannelPage> {
         channel: channel,
         params: MessageListParams()
         ..previousResultSize = 5
-        ..customTypes = ['Orders'],
         handler: MyNotificationCollectionHandler(this),
       )..initialize();
 
       setState(() {
         title = '${channel.name} (${messageList.length})';
-        channel = channel;
       });
     });
   }
@@ -313,7 +310,6 @@ class MyNotificationCollectionHandler extends NotificationCollectionHandler {
 
   @override
   void onChannelUpdated(FeedChannelContext context, FeedChannel channel) {
-    print('onChannelUpdate');
     _state._refresh();
   }
 
