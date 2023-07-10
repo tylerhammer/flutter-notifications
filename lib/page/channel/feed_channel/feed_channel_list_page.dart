@@ -29,6 +29,7 @@ class FeedChannelListPageState extends State<FeedChannelListPage> {
       ..includeEmpty = true
       ..limit = 20;
     channelQuery.next().then((channels) {
+      inspect(channels);
       setState(() {
         channelList = channels;
         title = channelList.isEmpty

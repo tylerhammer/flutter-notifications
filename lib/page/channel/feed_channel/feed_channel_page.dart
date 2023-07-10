@@ -25,26 +25,28 @@ class FeedChannelPageState extends State<FeedChannelPage> {
   String title = '';
   bool hasPrevious = false;
   bool hasNext = false;
+  FeedChannel? channel;
   List<BaseMessage> messageList = [];
 
   @override
   void initState() {
     super.initState();
     _initializeNotificationCollection();
-
-
   }
 
   void _initializeNotificationCollection() {
     FeedChannel.getChannel(channelUrl).then((channel) {
       collection = NotificationCollection(
         channel: channel,
-        params: MessageListParams(),
+        params: MessageListParams()
+        ..previousResultSize = 5
+        ..customTypes = ['Orders'],
         handler: MyNotificationCollectionHandler(this),
       )..initialize();
 
       setState(() {
         title = '${channel.name} (${messageList.length})';
+        channel = channel;
       });
     });
   }
@@ -125,7 +127,6 @@ class FeedChannelPageState extends State<FeedChannelPage> {
         BaseMessage message = messageList[index];
         String subDataString = message.extendedMessage['sub_data'];
         Map<String, dynamic> subData = json.decode(subDataString);
-        inspect(subData['template_variables']);
 
         return GestureDetector(
           child: Column(
@@ -236,7 +237,7 @@ class FeedChannelPageState extends State<FeedChannelPage> {
 
   void _refresh({bool markAsRead = false}) {
     if (markAsRead) {
-      SendbirdChat.markAsRead(channelUrls: [channelUrl]);
+      collection?.channel?.markAsRead(); 
     }
 
     setState(() {
@@ -312,6 +313,7 @@ class MyNotificationCollectionHandler extends NotificationCollectionHandler {
 
   @override
   void onChannelUpdated(FeedChannelContext context, FeedChannel channel) {
+    print('onChannelUpdate');
     _state._refresh();
   }
 
